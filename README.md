@@ -16,7 +16,7 @@ gulp serve-dev //launch app in browser or navigate to localhost:7300
 1. Once gulp-serve dev has run, read the output on index.html.
 2. Type in the input text box to see data shared between two parent controllers.
 3. Open the console to view the result of an HTTP request method handled by the Master Factory that will update the Child Factory: ExampleChildFactoryTwo.details
-4. View the source code. Navigate to the app.js to see the two controllers and how the single $scope.models is assigned the MasterFactory with all it's models, child models and methods.
+4. View the source code.(./src/js) Navigate to the app.js to see the two controllers and how the single $scope.models is assigned the MasterFactory with all it's models, child models and methods.
 5. Specifically look at how the MasterFactory.init() method works.
 
 ## Questions?
