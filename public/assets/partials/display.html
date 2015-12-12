@@ -1,0 +1,15 @@
+
+<div class="jumbotron col-md-12">
+    <h2> This template exists within the Sibling Controller: SibCtrl </h2>
+    <p> This data below is reflected from shared factory model between the two controllers -  childOne.name: </p>
+    <p>{{models.childOne.name }}</p>
+
+    <br>
+    <div class="container">
+      <h4>
+        This data is initiated by a Master Factory's init() where a http request is made and automatically updates the
+        shared child model between the two controllers: MasterFactory.childTwo.details
+      </h4>
+      <p>{{models.childTwo.details[0]}}</p>
+    </div>
+</div>

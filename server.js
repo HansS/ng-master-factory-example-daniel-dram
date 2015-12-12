@@ -1,10 +1,7 @@
 var express = require('express');
-var stylus = require('stylus');
 var logger = require('morgan');
 var bodyparser = require('body-parser');
 var port = process.env.PORT || 7203;
-var MongoClient = require('mongodb').MongoClient;
-var Server = require('mongodb').Server;
 var assert = require('assert');
 var path = require('path');
 
@@ -26,6 +23,3 @@ app.get('*', function(req, res){
 
 app.listen(port);
 console.log('listening on port'+port+'....');
-
-
-

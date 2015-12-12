@@ -2,7 +2,6 @@ var gulp              = require('gulp');
 var $                 = require('gulp-load-plugins')({lazy:true});
 var config            = require('./gulpconfig')();
 var del               = require('del');
-var wiredep           = require('wiredep').stream;
 var browserSync       = require('browser-sync');
 var sass              = require('gulp-sass');
 var concatCss         = require("gulp-concat-css");
@@ -82,17 +81,6 @@ gulp.task('clean-styles', function(callback){
     clean(file, callback);
 
 
-});
-
-
-
-gulp.task('wiredep', function(){
-    var options = config.wdOptions();
-    return gulp
-        .src(config.index)
-        .pipe(wiredep(options))
-        .pipe($.inject(gulp.src(config.js), {ignorePath:'/public', addRootSlash:true}))
-        .pipe(gulp.dest(config.viewMain));
 });
 
 

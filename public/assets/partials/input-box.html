@@ -1,0 +1,14 @@
+
+<div class="jumbotron col-md-12">
+    <h2>This template exists in the Main Controller: MainCtrl<h2>
+    <p>Type something below to display the data between the controllers</p>
+    <input type="text" class="form-control" ng-model="models.childOne.name" placeholder="type something to share with SibCtrl">
+    <br>
+    <div class="container">
+      <h4>
+        This data is initiated by a Master Factory's init() in the MainCtrl, where an http request is made and automatically updates the
+        shared child model between the two controllers: MasterFactory.childTwo.details
+      </h4>
+      <p>{{models.childTwo.details[0]}}</p>
+    </div>
+</div>
